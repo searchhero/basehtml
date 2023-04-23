@@ -14,8 +14,55 @@ BaseHTML is a simple and easy-to-use CSS and JavaScript library that helps devel
 Getting started with BaseHTML is easy. Simply include the following CDN links in your HTML file:
 
 ```html
+<!-- BaseHTML CSS-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/searchhero/basehtml/css/basehtml.css">
 <script src="https://cdn.jsdelivr.net/gh/searchhero/basehtml/js/basehtml.js"></script>
+```
+
+This JavaScript file is not required to be included by default. However, if you want to use the BaseAlert function to display an alert box message with a success status, you need to include this file in your HTML code.
+
+```html
+<!-- BaseHTML JS-->
+<script src="https://cdn.jsdelivr.net/gh/searchhero/basehtml/js/basehtml.js"></script>
+```
+
+The BaseAlert function is a part of the BaseHTML library, and it allows you to create custom alert boxes on your webpage. The function takes two parameters: message and type.
+
+The message parameter is a string that represents the message you want to display in the alert box. You can pass any text you want as the message, such as "Hello Universe".
+
+The type parameter is a string that represents the type of the alert box. The available types are "success" and "error". If you pass "success" as the type, the alert box will have a green background, and if you pass "error" as the type, the alert box will have a red background.
+
+Here's an example of how you can use the BaseAlert function to display an alert box with the message "Hello Universe" in a green background:
+
+```html
+BaseAlert('Hello Universe', 'success');
+```
+
+And here's an example of how you can use the BaseAlert function to display an alert box with the message "Error occurred" in a red background:
+
+```html
+BaseAlert('Error occurred', 'error');
+```
+
+By using the BaseAlert function with the appropriate parameters, you can easily create custom alert boxes that match the design of your website and provide a clear indication of the message you want to convey to your users.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/searchhero/basehtml/css/basehtml.css">
+    <title>Base HTML Document</title>
+</head>
+<body>
+    <form>
+		<h4> Hello Universe </h4>
+	</form>
+    <script src="https://cdn.jsdelivr.net/gh/searchhero/basehtml/js/basehtml.js"></script>
+</body>
+</html>
 ```
 
 Once you have added these links to your HTML file, you can start using BaseHTML on your default HTML forms.
