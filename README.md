@@ -16,7 +16,6 @@ Getting started with BaseHTML is easy. Simply include the following CDN links in
 ```html
 <!-- BaseHTML CSS-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/searchhero/basehtml/css/basehtml.css">
-<script src="https://cdn.jsdelivr.net/gh/searchhero/basehtml/js/basehtml.js"></script>
 ```
 
 This JavaScript file is not required to be included by default. However, if you want to use the BaseAlert function to display an alert box message with a success status, you need to include this file in your HTML code.
@@ -57,8 +56,10 @@ By using the BaseAlert function with the appropriate parameters, you can easily 
     <title>Base HTML Document</title>
 </head>
 <body>
-    <form>
-		<h4> Hello Universe </h4>
+    	<form>
+	    <h1>
+		    Hello Universe
+	    </h1>
 	</form>
     <script src="https://cdn.jsdelivr.net/gh/searchhero/basehtml/js/basehtml.js"></script>
 </body>
