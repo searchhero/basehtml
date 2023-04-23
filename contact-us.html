@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/basehtml.css">
+	<title>Base HTML | Contact Form</title>
+</head>
+
+<body>
+	<form>
+		<img src="img/base_html_icon (1).png">
+		<h4>Contact Us</h4>
+		<hr>
+		<div class="alert" style="display: none;"></div>
+
+		<label for="name-input"> Name :</label>
+		<input type="text" id="name-input" name="name" placeholder="Enter Your Full Name" required>
+
+		<label for="email-input"> Email :</label>
+		<input type="email" id="email-input" name="email" placeholder="Enter Your Email Address" required>
+
+		<label for="message-input"> Type Your Message :</label>
+		<textarea id="message-input"> </textarea>
+		<input type="button" value="submit" onclick="BaseAlert('Alert Box Message','success');" />
+	</form>
+
+	<script src="js/basehtml.js"></script>
+
+</body>
+
+</html>

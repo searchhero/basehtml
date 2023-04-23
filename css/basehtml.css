@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+}
+.alert{
+  border: 2px solid #000;
+  padding: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+  background: red;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.alert span{
+  float: right;
+  cursor: pointer;
+  padding: 0 10px 0 10px;
+  margin-left: 10px;
+  background-color: #fff;
+  color: #000;
+  text-transform: uppercase;
+}
+.main,
+form {
+  padding: 30px 30px 10px 30px;
+  width: 815px;
+  max-width: 100%;
+  border: 1px solid #ddd;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+  overflow-y: scroll;
+  max-height: 90%;
+}
+
+form hr {
+  border: 2px solid;
+  border-image: linear-gradient(to right, #40c9ff, #e81cff);
+  border-image-slice: 1;
+  margin-bottom: 20px;
+}
+
+form img {
+  max-width: 50px;
+  float: right;
+}
+
+form h1,
+h2,
+h3,
+h4 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, royalblue 0%, blueviolet 25%, #f310af 50%, blueviolet 75%, royalblue 100%);
+  background-size: 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate-form-header 10s linear infinite;
+}
+
+@keyframes animate-form-header {
+  100% {
+    background-position: 400%;
+  }
+}
+
+label {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+input[type=range] {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"]:checked {
+  border-color: #1da1f2;
+  background-color: #1da1f2;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+input[type=file],
+input[type=date],
+input[type=month],
+input[type=week],
+input[type=time],
+input[type=tel],
+input[type=url],
+input[type=search],
+input[type=search] {
+  width: 100%;
+  padding: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border: 2px solid;
+  border-image: linear-gradient(to right, #40c9ff, #e81cff);
+  border-image-slice: 1;
+  outline: none;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=number]:focus,
+input[type=file]:focus,
+input[type=date]:focus,
+input[type=month]:focus,
+input[type=week]:focus,
+input[type=time]:focus,
+input[type=tel]:focus,
+input[type=url]:focus,
+input[type=search]:focus {
+  box-shadow: 0px 0px 10px 0px rgba(190, 190, 190, 0.7);
+  border: 2px solid #ddd;
+}
+
+input[type=button],
+input[type=reset],
+input[type=submit],
+button {
+  font-family: "Poppins", sans-serif;
+  background: blueviolet;
+  border: none;
+  color: white;
+  font-size: 17px;
+  padding: 10px 30px 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0 0 20px 0px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+input[type=button]:hover,
+input[type=reset]:hover,
+input[type=submit]:hover,
+button:hover {
+  background: blue;
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+  overflow: auto;
+  min-height: 100px;
+  height: auto;
+  padding: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border: 2px solid;
+  border-image: linear-gradient(to right, #40c9ff, #e81cff);
+  border-image-slice: 1;
+  outline: none;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+textarea:focus {
+  box-shadow: 0px 0px 10px 0px rgba(190, 190, 190, 0.7);
+  border: 2px solid #ddd;
+}
+
+@media screen and (max-width: 767px) {
+
+  .main,
+  form {
+    width: 100%;
+    padding: 20px 20px 0px 20px;
+    margin: 0 10px 0px 10px;
+  }
+}

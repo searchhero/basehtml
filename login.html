@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/basehtml.css">
+	<title>Base HTML | Login Form</title>
+</head>
+
+<body>
+	<form>
+		<img src="img/base_html_icon (1).png">
+		<h1>Login</h1>
+		<hr>
+		<div class="alert" style="display: none;"></div>
+
+		<label for="phone-input"> Phone :</label>
+		<input type="text" id="phone-input" name="phone" placeholder="Enter Your Phone Number" required>
+
+		<label for="password-input"> Password :</label>
+		<input type="password" id="password-input" name="password" placeholder="Enter Your Password" required>
+
+		<input type="button" value="submit" onclick="BaseAlert('Alert Box Message','success');" />
+
+	</form>
+	<script src="js/basehtml.js"></script>
+</body>
+
+</html>

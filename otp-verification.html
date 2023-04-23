@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/basehtml.css">
+	<title>Base HTML | OTP Verification Form</title>
+</head>
+
+<body>
+	<form>
+		<img src="img/base_html_icon (1).png">
+		<h1>Verification</h1>
+		<hr>
+		<div class="alert" style="display: none;"></div>
+
+		<label for="phone-input"> Phone :</label>
+		<input type="text" id="phone-input" name="phone" placeholder="Enter Your Phone Number" value="91XXXXXX82" readonly>
+
+		<label for="otp-input"> Enter the otp :</label>
+		<input type="number" id="otp-input" name="otp" placeholder="Enter OTP Here" required>
+
+		<input type="button" value="submit" onclick="BaseAlert('Alert Box Message','success');" />
+
+	</form>
+	<script src="js/basehtml.js"></script>
+</body>
+
+</html>

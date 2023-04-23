@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/basehtml.css">
+	<title>Base HTML | Search Box</title>
+</head>
+
+<body>
+	<form>
+		<img src="img/base_html_icon (1).png">
+		<h4>Search Box</h4>
+		<hr>
+		<div class="alert" style="display: none;"></div>
+
+		<input type="search" id="search-input" name="search" placeholder="Type Something ..." required>
+
+		<input type="button" value="Search" onclick="BaseAlert('You are searching for : ' + document.getElementById('search-input').value,'success');" />
+	</form>
+
+	<script src="js/basehtml.js"></script>
+
+</body>
+
+</html>
