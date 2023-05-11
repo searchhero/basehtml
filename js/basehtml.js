@@ -27,3 +27,26 @@ function CopyToClipboard(copyData) {
     document.body.removeChild(tempTextarea);
     return true;
 }
+function CopyToClipboard(copyData) {
+    var tempTextarea = document.createElement("textarea");
+    tempTextarea.value = copyData;
+    document.body.appendChild(tempTextarea);
+    tempTextarea.select();
+    tempTextarea.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(tempTextarea.value);
+    tempTextarea.value = "";
+    document.body.removeChild(tempTextarea);
+    return true;
+}
+
+function typeWriter(htmlinside ,text, time) {
+    var i = 0;
+    function writeText() {
+      if (i < text.length) {
+        htmlinside.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(writeText, time);
+      }
+    }
+    writeText();
+  }
