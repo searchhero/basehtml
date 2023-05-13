@@ -39,14 +39,20 @@ function CopyToClipboard(copyData) {
     return true;
 }
 
-function typeWriter(htmlinside ,text, time) {
-    var i = 0;
-    function writeText() {
-      if (i < text.length) {
+function typeWriter(htmlinside, text, time, outtype) {
+  var i = 0;
+  outtype = outtype || "h"; // default value of "h" if not provided
+
+  function writeText() {
+    if (i < text.length) {
+      if (outtype == "h") {
         htmlinside.innerHTML += text.charAt(i);
-        i++;
-        setTimeout(writeText, time);
+      } else {
+        htmlinside.value += text.charAt(i);
       }
+      i++;
+      setTimeout(writeText, time);
     }
-    writeText();
   }
+  writeText();
+}
