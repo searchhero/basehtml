@@ -62,6 +62,6 @@ function preloader(action){
     if(action == "true"){
         preloader.style = "display: block;";
     }else{
-        preloader.style = "display: block;";
+        preloader.style = "display: none;";
     }
 }
