@@ -15,18 +15,6 @@ function CloseBaseAlert() {
     alert.innerHTML = "";
     alert.style = "display: none;";
 }
-
-function CopyToClipboard(copyData) {
-    var tempTextarea = document.createElement("textarea");
-    tempTextarea.value = copyData;
-    document.body.appendChild(tempTextarea);
-    tempTextarea.select();
-    tempTextarea.setSelectionRange(0, 99999);
-    navigator.clipboard.writeText(tempTextarea.value);
-    tempTextarea.value = "";
-    document.body.removeChild(tempTextarea);
-    return true;
-}
 function CopyToClipboard(copyData) {
     var tempTextarea = document.createElement("textarea");
     tempTextarea.value = copyData;
