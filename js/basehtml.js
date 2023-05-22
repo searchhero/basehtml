@@ -56,3 +56,12 @@ function typeWriter(htmlinside, text, time, outtype) {
   }
   writeText();
 }
+
+function preloader(action){
+    const preloader = document.querySelector('.preloader'),
+    if(action == "true"){
+        preloader.style = "display: block;";
+    }else{
+        preloader.style = "display: block;";
+    }
+}
