@@ -235,7 +235,9 @@ textarea:focus {
     height: 80px;
     animation: pulse-rotate 1.5s ease-in-out infinite alternate;
 }
-
+.hidden{
+  visibility: hidden;
+}
 @keyframes pulse-rotate {
     0% {
         transform: scale(1) rotate(0deg);
